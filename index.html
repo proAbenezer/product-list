@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./main/output.css" />
+    <script src="script.js" defer></script>
+    <title>Product list with cart</title>
+  </head>
+  <body class="bg-Rose100">
+    <div
+      class="w-full min-h-screen container mx-auto flex flex-col items-center gap-y-12 pt-12 px-14 mb-20 lg:items-start lg:flex-row md:gap-y-0 lg:gap-x-12 xl:gap-x-8 3xl:px-14 lg:justify-center"
+    >
+      <div class="flex flex-col gap-y-8 mb-10">
+        <h1 class="font-redHatBold text-Rose900 text-4xl">Desserts</h1>
+        <div id="foodContainer" class="grid">
+          <div class="flex flex-col gap-y-6 pb-4">
+            <div class="relative w-full rounded-lg">
+              <img
+                src="./assets/images/image-waffle-mobile.jpg"
+                alt=""
+                class="w-full h-full rounded-lg lg:hidden"
+              />
+              <img
+                src="./assets/images/image-waffle-desktop.jpg"
+                alt=""
+                class="hidden w-full h-full rounded-lg lg:block"
+              />
+              <a
+                href=""
+                id="addToCart"
+                data-id="1"
+                class="w-44 h-10 absolute -bottom-5 right-[50%] translate-x-[50%] flex items-center justify-center gap-2 border-[1px] border-Rose500 bg-white rounded-full font-redHatBold text-sm cursor-pointer"
+              >
+                <img
+                  src="assets/images/icon-add-to-cart.svg"
+                  alt=""
+                  data-id="1"
+                />
+                <p data-id="1" class="">Add to Cart</p>
+              </a>
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <p class="font-redHat text-Rose400 text-xs">Waffle</p>
+              <h1 class="font-redHatBold text-sm text-Rose900">
+                Waffle with Berries
+              </h1>
+              <p class="font-redHatBold text-Red text-sm">$6.50</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[280px] bg-white min-h-96 lg:sticky lg:top-12 lg:right-0 lg:w-[380px] rounded-lg px-3 py-6 gap-y-6"
+      >
+        <h1 id="cart-number" class="font-redHatBold text-xl text-Red mb-6">
+          Your Cart (7)
+        </h1>
+
+        <div class="flex flex-col">
+          <div
+            class="flex justify-between items-center border-b-1 border-Rose900"
+          >
+            <div class="flex flex-col gap-y-1">
+              <p class="font-redHatBold text-[#444444] text-[0.8rem]">
+                Classic Tiramisu
+              </p>
+              <div class="flex items-center gap-x-3 text-xs">
+                <p class="font-redHatBold text-Red">1xl</p>
+                <p class="font-redHat text-gray-400">@ $5.50</p>
+                <p class="font-redHatBold text-gray-400">$5.50</p>
+              </div>
+            </div>
+            <div
+              class="relative w-5 h-5 flex rounded-full border-[#B0B0B0] border-2 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="none"
+                viewBox="0 0 10 10"
+                class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <path
+                  fill="#B0B0B0"
+                  d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <hr class="border-gray-300 my-4" />
+          <div
+            class="flex justify-between items-center border-b-1 border-Rose900"
+          >
+            <div class="flex flex-col gap-y-1">
+              <p class="font-redHatBold text-[#444444] text-[0.8rem]">
+                Classic Tiramisu
+              </p>
+              <div class="flex items-center gap-x-3 text-xs">
+                <p class="font-redHatBold text-Red">1xl</p>
+                <p class="font-redHat text-gray-400">@ $5.50</p>
+                <p class="font-redHatBold text-gray-400">$5.50</p>
+              </div>
+            </div>
+            <div
+              class="relative w-5 h-5 flex rounded-full border-[#B0B0B0] border-2 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="none"
+                viewBox="0 0 10 10"
+                class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <path
+                  fill="#B0B0B0"
+                  d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <hr class="border-gray-300 my-4" />
+          <div
+            class="flex justify-between items-center border-b-1 border-Rose900"
+          >
+            <div class="flex flex-col gap-y-1">
+              <p class="font-redHatBold text-[#444444] text-[0.8rem]">
+                Classic Tiramisu
+              </p>
+              <div class="flex items-center gap-x-3 text-xs">
+                <p class="font-redHatBold text-Red">1xl</p>
+                <p class="font-redHat text-gray-400">@ $5.50</p>
+                <p class="font-redHatBold text-gray-400">$5.50</p>
+              </div>
+            </div>
+            <div
+              class="relative w-5 h-5 flex rounded-full border-[#B0B0B0] border-2 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="none"
+                viewBox="0 0 10 10"
+                class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <path
+                  fill="#B0B0B0"
+                  d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <hr class="border-gray-300 my-4" />
+        </div>
+        <div class="flex flex-col gap-y-4">
+          <div class="flex flex-col mt-4">
+            <div class="flex justify-between">
+              <p class="font-redHat text-gray-400 text-xs">Order Total</p>
+              <p class="font-redHatBold text-Rose900 text-lg">$46.50</p>
+            </div>
+          </div>
+
+          <div
+            class="w-full rounded-lg bg-[#fae7e2] flex items-start gap-x-2 justify-center py-4"
+          >
+            <img
+              src="./assets/images/icon-carbon-neutral.svg"
+              alt=""
+              class="w-[1rem]"
+            />
+            <p class="font-redHat text-Rose900 text-xs">
+              This is
+              <span class="font-redHatBold text-Rose900"
+                >carbon-neutral delivery</span
+              >
+            </p>
+          </div>
+          <button
+            class="w-full bg-Red py-3 font-redHatBold text-white text-md rounded-full cursor-pointer"
+          >
+            Confirm order
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

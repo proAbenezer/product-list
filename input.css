@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "RedHatLight";
+  src: url("../fonts/static/RedHatText-Light.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RedHat";
+  src: url("../fonts/static/RedHatText-Regular.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RedHatBold";
+  src: url("../fonts/static/RedHatText-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+#foodContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 280px);
+}
+
+@media only screen and (min-width: 978px) {
+  #foodContainer {
+    grid-template-columns: repeat(2, 258px);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #foodContainer {
+    grid-template-columns: repeat(3, 280px);
+  }
+}
