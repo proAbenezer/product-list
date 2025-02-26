@@ -42,7 +42,7 @@ const items = [
     description: "Macaron Mix of Five",
     price: 8.0,
 
-    imagePathMobile: "./assets/images/image-macaron-thumbnail.jpg",
+    imagePathMobile: "./assets/images/image-macaron-mobile.jpg",
     imagePathTablet: "./assets/images/image-macaron-tablet.jpg",
     imagePathDesktop: "./assets/images/image-macaron-desktop.jpg",
     thumbnail: "./assets/images/image-macaron-thumbnail.jpg",
